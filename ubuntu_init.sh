@@ -1,5 +1,15 @@
 #!/bin/bash
 
+echo "Updating the system"
+sudo apt-get update -y
+
+echo "Adding build essential packages"
+sudo apt-get install build-essential -y
+
+echo "Install Snap"
+sudo apt-get install snapd -y
+
+
 echo "Installing Git"
 
 sudo apt -y install git
@@ -34,8 +44,6 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/
 sudo apt update
 sudo apt install -y mongodb-org
 
-echo "Installing npm"
-
 
 echo "Install eslint"
 
@@ -47,7 +55,7 @@ wget https://downloads.mongodb.com/compass/mongodb-compass_1.15.1_amd64.deb
 sudo dpkg -i mongodb-compass_1.15.1_amd64.deb
 
 echo "Installing angular cli 8"
-npm install -g @angular/cli@8
+npm install -g @angular/cli@8 
 
 echo "Installing react cli"
 npm install -g react@16
