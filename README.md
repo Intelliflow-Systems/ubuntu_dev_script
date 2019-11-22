@@ -9,7 +9,7 @@ Few things to consider before utilizing the scripts -
 ##Ubuntu
 
 * Install Ubuntu version 16.04 or above.
-* Install `git`
+* Install `git`\
     `sudo apt-get install git`
 * Clone this repository
 * Navigate to folder **dotfiles**
